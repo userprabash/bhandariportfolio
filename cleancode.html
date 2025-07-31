@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Template Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700"
+      rel="stylesheet"
+    />
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/component.css" rel="stylesheet" />
+    <link href="css/circle.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- CSS Skin File -->
+    <link href="css/skins/green.css" rel="stylesheet" />
+    <!-- Live Style Switcher - demo only -->
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="blue"
+      href="css/skins/blue.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="green"
+      href="css/skins/green.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="yellow"
+      href="css/skins/yellow.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="blueviolet"
+      href="css/skins/blueviolet.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="goldenrod"
+      href="css/skins/goldenrod.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="magenta"
+      href="css/skins/magenta.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="orange"
+      href="css/skins/orange.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="purple"
+      href="css/skins/purple.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="red"
+      href="css/skins/red.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="yellowgreen"
+      href="css/skins/yellowgreen.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+  </head>
+
+  <body class="light blog-post">
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+      <div class="content-switcher">
+        <h4>COLOR SWITCHER</h4>
+        <ul>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('purple');"
+              title="purple"
+              class="color"
+            >
+              <img src="img/styleswitcher/purple.png" alt="purple" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('red');"
+              title="red"
+              class="color"
+            >
+              <img src="img/styleswitcher/red.png" alt="red" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('blueviolet');"
+              title="blueviolet"
+              class="color"
+            >
+              <img src="img/styleswitcher/blueviolet.png" alt="blueviolet" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('blue');"
+              title="blue"
+              class="color"
+            >
+              <img src="img/styleswitcher/blue.png" alt="blue" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('goldenrod');"
+              title="goldenrod"
+              class="color"
+            >
+              <img src="img/styleswitcher/goldenrod.png" alt="goldenrod" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('magenta');"
+              title="magenta"
+              class="color"
+            >
+              <img src="img/styleswitcher/magenta.png" alt="magenta" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('yellowgreen');"
+              title="yellowgreen"
+              class="color"
+            >
+              <img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('orange');"
+              title="orange"
+              class="color"
+            >
+              <img src="img/styleswitcher/orange.png" alt="orange" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('green');"
+              title="green"
+              class="color"
+            >
+              <img src="img/styleswitcher/green.png" alt="green" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="setActiveStyleSheet('yellow');"
+              title="yellow"
+              class="color"
+            >
+              <img src="img/styleswitcher/yellow.png" alt="yellow" />
+            </a>
+          </li>
+        </ul>
+        <div id="hideSwitcher">&times;</div>
+      </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Page Title Starts -->
+    <div class="title-section text-left text-sm-center">
+      <h2>my <span>blog</span></h2>
+      <span class="title-bg">posts</span>
+    </div>
+    <!-- Page Title Ends -->
+    <!-- Main Content Starts -->
+    <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Article Starts -->
+          <article class="col-12">
+            <!-- Meta Starts -->
+            <div class="meta open-sans-font">
+              <span> <i class="fa fa-user"></i> Purushotam </span>
+              <span class="date">
+                <i class="fa fa-calendar"></i> 9 January 2023
+              </span>
+              <span>
+                <i class="fa fa-tags"></i> wordpress, frontend, backend , app
+                development
+              </span>
+            </div>
+            <!-- Meta Ends -->
+            <!-- Article Content Starts -->
+            <h1 class="text-uppercase text-capitalize">
+              Why Clean Code Matters in Development
+            </h1>
+            <img
+              src="img/blog/blog-post-3.jpg"
+              class="img-fluid"
+              alt="Clean Code Blog Image"
+            />
+            <div class="blog-excerpt open-sans-font pb-5">
+              <p>
+                In software development, code is more than just instructions for
+                machines — it's a form of communication between humans. Writing
+                clean code is one of the most important habits a developer can
+                develop. Whether you're working solo or as part of a team, the
+                clarity of your code affects not only how easily others can read
+                it, but also how efficiently it can be maintained and scaled.
+              </p>
+
+              <h5 class="pt-4 pb-2">What is Clean Code?</h5>
+              <p>
+                Clean code is readable, understandable, and easy to change. It
+                follows consistent formatting, uses meaningful names, and is
+                logically structured. Clean code avoids unnecessary complexity
+                and emphasizes clarity over cleverness.
+              </p>
+
+              <h5 class="pt-4 pb-2">Why Clean Code Matters</h5>
+              <p>
+                As a full-stack web and app developer, I’ve learned that clean
+                code saves time, reduces bugs, and improves collaboration. Here
+                are a few reasons why it matters:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Maintainability:</strong> Clean code is easier to
+                  understand, update, and refactor. It reduces the time spent
+                  debugging or modifying features.
+                </li>
+                <li>
+                  <strong>Collaboration:</strong> Teams work more efficiently
+                  when code is clean and consistent. It’s easier for others to
+                  jump in and contribute without confusion.
+                </li>
+                <li>
+                  <strong>Scalability:</strong> A well-structured codebase can
+                  grow with your app, making it easier to add new features
+                  without breaking existing functionality.
+                </li>
+                <li>
+                  <strong>Reduced Technical Debt:</strong> Writing messy code
+                  may be quicker at first, but it leads to more work later.
+                  Clean code minimizes long-term costs.
+                </li>
+              </ul>
+
+              <h5 class="pt-4 pb-2">Principles of Writing Clean Code</h5>
+              <p>
+                Writing clean code doesn't require special tools — it’s about
+                discipline and following certain principles. Here are a few I
+                follow:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Use Meaningful Names:</strong> Variables, functions,
+                  and classes should be descriptively named. Avoid vague names
+                  like <code>x</code> or <code>data</code>.
+                </li>
+                <li>
+                  <strong>Keep Functions Small:</strong> Each function should do
+                  one thing and do it well. This makes testing and debugging
+                  easier.
+                </li>
+                <li>
+                  <strong>Follow Consistent Formatting:</strong> Indentation,
+                  spacing, and naming conventions should be uniform throughout
+                  your codebase.
+                </li>
+                <li>
+                  <strong>Avoid Repetition (DRY Principle):</strong> Don’t
+                  Repeat Yourself. Repeated logic should be moved into reusable
+                  functions or components.
+                </li>
+                <li>
+                  <strong>Write Comments Where Necessary:</strong> Use comments
+                  to explain the “why” behind complex logic, not what the code
+                  is doing — the code itself should show that.
+                </li>
+              </ul>
+
+              <h5 class="pt-4 pb-2">Tools That Help Maintain Clean Code</h5>
+              <p>
+                Thankfully, there are tools that can help enforce clean code
+                practices:
+              </p>
+              <ul>
+                <li>
+                  <strong>Linters:</strong> Tools like ESLint, Pylint, and
+                  Flake8 can automatically flag inconsistencies and bad
+                  practices.
+                </li>
+                <li>
+                  <strong>Formatters:</strong> Prettier or Black (for Python)
+                  automatically format code for readability.
+                </li>
+                <li>
+                  <strong>Code Review:</strong> Peer reviews ensure multiple
+                  eyes examine code for quality and clarity before merging.
+                </li>
+              </ul>
+
+              <h5 class="pt-4 pb-2">Real-Life Impact</h5>
+              <p>
+                On one of my recent projects, I inherited a codebase that lacked
+                structure, comments, and consistency. Even small changes took
+                hours because it was difficult to trace logic. After refactoring
+                key parts of the code using clean principles, development became
+                smoother and team velocity increased. Clients noticed the
+                improved performance and reliability — and that’s the real
+                reward.
+              </p>
+
+              <h5 class="pt-4 pb-2">Conclusion</h5>
+              <p>
+                Writing clean code is an investment. It might take a little more
+                effort up front, but it pays off massively in the long run. It
+                creates better software, improves teamwork, and helps you grow
+                as a developer. As someone who builds both web and mobile
+                applications, I can say with confidence that clean code is the
+                backbone of any successful digital product.
+              </p>
+              <p>
+                Whether you're a junior developer just starting out or a
+                seasoned engineer, clean code is a principle worth mastering —
+                your future self and your team will thank you.
+              </p>
+            </div>
+
+            <!-- Article Content Ends -->
+          </article>
+          <!-- Article Ends -->
+        </div>
+      </div>
+    </div>
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
