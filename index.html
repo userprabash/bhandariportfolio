@@ -1130,6 +1130,27 @@
       </div>
       <!-- Blog Ends -->
     </div>
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        // Disable F12
+        if (e.key === "F12") {
+          e.preventDefault();
+        }
+        // Disable Ctrl+Shift+I/J/C/U
+        if (
+          (e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "I" || e.key === "J" || e.key === "C")) ||
+          (e.ctrlKey && e.key === "U")
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
     <!-- Main Content Ends -->
     <!-- Template JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
